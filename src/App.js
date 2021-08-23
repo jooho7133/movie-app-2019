@@ -17,7 +17,7 @@ class App extends React.Component {
     } = await axios.get(
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
-    this.setState({ isLoading: true, movies });
+    this.setState({ isLoading: false, movies });
   };
 
   componentDidMount() {
